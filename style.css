@@ -1,5 +1,5 @@
 @import url('http://fonts.cdnfonts.com/css/akira-expanded');
-@import url('http://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root{
     --white: #f7f7f7;
@@ -42,9 +42,12 @@ h1{
 nav .container-fluid,
 nav ul{
     background-color: var(--white);
+    animation: nav-appear 600ms ease-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
 }
 
-nav a{
+nav li a{
     font-size: clamp(0.7rem, 4vw, 1rem);
 }
 
@@ -60,6 +63,7 @@ nav li a::before{
 nav li a:hover::before{
     transform: scale(1,1);
 }
+
 
 .navbar-brand{
     font-family: 'Akira Expanded', sans-serif;
@@ -159,7 +163,7 @@ header h1{
 
 .header-phrase{
     color: var(--darkblue);
-    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-size: clamp(1rem, 4vw, 1.3rem);
     animation: titleAnimation 1000ms ease-out 1200ms;
     animation-fill-mode: forwards;
     opacity: 0;
@@ -188,7 +192,7 @@ header img{
 }
 
 header figure{
-    animation: titleAnimation 1000ms ease-out 1600ms;
+    animation: titleAnimation 1000ms ease-out 1200ms;
     animation-fill-mode: forwards;
     opacity: 0;
 }
@@ -212,9 +216,10 @@ header figure{
 
 /* PROJECTS */
 
-#projects::before{
+#projects::before,
+#projects::after{
     content: '';
-    height: 70px;
+    height: 40px;
     display: block;
 }
 
@@ -237,17 +242,18 @@ header figure{
 }
 
 .projects img{
-    padding: 10px;
-    border-radius: 30px;
+    border-radius: 20px;
+    background-color:var(--black);
+    opacity: 0.7;
+    transition: all 300ms ease-out
 }
-
-.skills img{
-    padding: 0px important!;
+.projects img:hover {
+    opacity: 1;
 }
 
 #projects i{
     font-size: 1.7rem;
-    padding: 0.2rem 1rem 0.5rem 1rem;
+    padding: 0.1rem 1rem 1rem 1rem;
 }
 
 #projects i:hover{
@@ -288,9 +294,14 @@ header figure{
     color: var(--red);
 }
 
+#aboutme h3{
+    font-weight: 1000;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
 .row-1 p{
     color: var(--black);
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 .card{
@@ -304,6 +315,7 @@ header figure{
 .card-text{
     color: var(--white);
 }
+
 /* CONTACT */
 
 #contact::before{
