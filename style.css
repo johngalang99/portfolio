@@ -16,6 +16,10 @@
     padding: 0;
 }
 
+i{
+    color: var(--red);
+}
+
 body::before {
     content: '';
     height: 50px;
@@ -29,6 +33,7 @@ body{
 
 h1{
     font-family: 'Akira Expanded', sans-serif;
+    font-size: clamp(2rem, 5vw, 4rem);
 }
 
 /* NAVBAR */
@@ -36,6 +41,10 @@ h1{
 nav .container-fluid,
 nav ul{
     background-color: var(--white);
+}
+
+nav a{
+    font-size: clamp(0.7rem, 4vw, 1.2rem);
 }
 
 .navbar-brand{
@@ -83,17 +92,24 @@ header p{
 }
 
 header button{
+    width: min(150px, 50%);
+    font-size: clamp(1rem, 4vw, 1.2rem);
     background-color: var(--red);
     color: white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px
+}
+
+.header-phrase{
+    color: var(--darkblue);
+    font-size: clamp(1rem, 4vw, 2rem);
 }
 
 /* PROJECTS */
 
-#projects::before {
+#projects::before{
     content: '';
-    height: 100px;
+    height: 70px;
     display: block;
 }
 
@@ -101,8 +117,117 @@ header button{
     background-color: var(--black);
 }
 
-#projects *{
+#projects h1{
+    color: var(--red);
+    text-align: center;
+}
+
+#projects h2,p{
     color: var(--white);
 }
 
+.projnum, .tools{
+    color: var(--red);
+}
+
+.projects img{
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.skills img{
+    padding: 0px important!;
+}
+
+#projects i{
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
+#projects p{
+    font-size: clamp(1rem, 4vw, 1.5rem);
+}
 /* ABOUT ME */
+
+#aboutme{
+    background-color: var(--white);
+}
+
+#aboutme::before{
+    content: '';
+    height: 70px;
+    display: block;
+    background-color: var(--white);
+}
+
+#aboutme img{
+    max-width: min(400px, 60%);
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+#aboutme h1{
+    text-align: center;
+    color: var(--red);
+}
+
+.row-1 p{
+    color: var(--black);
+    font-size: clamp(1rem, 4vw, 1.3rem);
+}
+
+.card{
+    background-color: var(--darkblue);
+}
+
+.card-title{
+    color: var(--red);
+}
+
+.card-text{
+    color: var(--white);
+}
+/* CONTACT */
+
+#contact::before{
+    content: '';
+    height: 70px;
+    display: block;
+    background-color: var(--darkblue);
+}
+
+#contact{
+    background-color: var(--darkblue);
+}
+
+#contact *{
+    text-align: center;
+}
+
+#contact form *{
+    margin: auto;
+}
+
+#contact h1{
+    color: var(--red);
+}
+
+#contact a,
+#contact a i{
+    padding: 7px;
+    font-size: 1.7rem;
+}
+
+#contact button{
+    background-color: var(--red);
+    margin-top: 7px;
+    color: var(--white);
+}
+
+footer{
+    background-color: var(--black);
+    padding: 0;
+    color: var(--white);
+
+}

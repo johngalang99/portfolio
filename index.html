@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imman Galang</title>
+    <title>Imman Galang | Front-End Developer</title>
     <link rel="icon" href="./images/tabicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -25,7 +25,7 @@
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav m-right ms-auto">
+                <ul class="navbar-nav m-right ms-auto mb-1">
                     <li class="nav-item mx-auto px-lg-4">
                         <a href="#home" class="nav-link">Home</a>
                     </li>
@@ -49,9 +49,9 @@
     <!-- Header -->
 
     <header class="vh-100">
-        <div class="container">
-            <div class="row pt-5 align-items-lg-end">
-                <div class="col-lg-5 order-lg-2">
+        <div class="container-fluid h-100">
+            <div class="row pt-5 align-items-lg-center h-100">
+                <div class="col-lg-5 order-lg-2 ">
                     <img src="./images/header.svg" class="img-fluid px-2" alt="">
                 </div>
                 <div class="col-lg-7 order-lg-1">
@@ -59,8 +59,8 @@
                         <div class="container">
                             <p class="pb-3">Front-End Developer</p>
                             <h1>imman galang</h1>
-                            <p>i love creating stuff on the net</p>
-                            <button>Contact Me</button>
+                            <p class="header-phrase">i build stylish and adaptive websites on the internet</p>
+                            <a href="#contact"><button>Contact Me</button></a>
                         </div>
                     </div>
                 </div>
@@ -71,56 +71,62 @@
     <!-- Projects -->
 
     <section id="projects">
-        <div class="container">
+        <div class="container projects">
             <h1>Projects</h1>
-            <div class="row">
+            <div class="row justify-content-between text-center text-md-end align-items-center">
                 <div class="col-12 col-md-6">
                     <img src="./images/javascript.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-12 col-md-6">
+                    <p class="projnum">project 1</p>
                     <h2>JavaScript Documentation</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iusto voluptas expedita labore.
-                        Quasi, consectetur recusandae illo libero hic autem ipsa, quas asperiores dolores officiis,
-                        neque et temporibus. Veritatis, ipsum?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iusto voluptas expedita labore?
+                    </p>
+                    <p class="tools">HTML CSS</p>
+                    <a href=""><i class="fas fa-link"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-between text-md-start text-center align-items-center">
                 <div class="col-12 col-md-6 order-md-2">
                     <img src="./images/survey.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-12 col-md-6 order-md-1">
+                    <p class="projnum">project 2</p>
                     <h2>Survey Form</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iusto voluptas expedita labore.
-                        Quasi, consectetur recusandae illo libero hic autem ipsa, quas asperiores dolores officiis,
-                        neque et temporibus. Veritatis, ipsum?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iusto voluptas expedita labore?
+                    </p>
+                    <p class="tools">HTML CSS</p>
+                    <a href=""><i class="fas fa-link"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-between text-center text-md-end align-items-center">
                 <div class="col-12 col-md-6">
                     <img src="./images/trombone.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-12 col-md-6">
+                    <p class="projnum">project 3</p>
                     <h2>Landing Page</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iusto voluptas expedita labore.
-                        Quasi, consectetur recusandae illo libero hic autem ipsa, quas asperiores dolores officiis,
-                        neque et temporibus. Veritatis, ipsum?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iusto voluptas expedita labore?
+                    </p>
+                    <p class="tools">HTML CSS Bootstrap</p>
+                    <a href=""><i class="fas fa-link"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <h1>skills and tools</h1>
-            <row class="">
-                <div class="col">
+
+        <!-- Skills -->
+        
+        <div class="container skills">
+            <h1 class="text-center mt-4">skills and tools</h1>
+                <div class="text-center pb-5">
                     <img src="images/logo-html5.png" alt="">
                     <img src="images/logo-git.png" alt="">
+                    <img src="images/logo-css3.png" alt="">
                     <img src="images/logo-bootstrap.png" alt="">
                 </div>
-                <div class="col">
-                    <img src="images/logo-css3.png" alt="">
-                    <img src="images/vscode.png" width=85px class="mx-3" alt="">
-                    <img src="images/github-logo.png" width=90px class="mx-5" alt="">
-                </div>
-            </row>
         </div>
     </section>
 
@@ -128,21 +134,88 @@
 
     <section id="aboutme">
         <div class="container">
-            <div class="container">
-                <img src="./images/me.jpg" class="w-50" alt="">
-                <h1>Hello,</h1>
-                <h1>i'm imman</h1>
+            <div class="row align-items-center row-1">
+                <div class="col-md-6">
+                    <h1>Hello, I'm Imman</h1>
+                    <img src="./images/me.jpg" class="mb-4" alt="">
+                </div>
+                <div class="col-md-6 text-md-start">
+                    <p>I am a front-end web developer based in the Philippines and currently enrolled in zuitt coding bootcamp.</p>
+                    <h3 class="pt-3"><i class="fas fa-university"></i> Education</h4>
+                    <p>2015-2019 University of the Philippines Los Baños</p>
+                    <p>2021 Zuitt Coding Bootcamp</p>
+                    <h3 class="pt-3"><i class="fas fa-briefcase"></i> Work Experience</h4>
+                    <p>2020-2021 University Research Associate</p>
+                    <p>2021-present Freelance Graphic Designer and Video Editor</p>
+                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas delectus voluptatum a eum
-                necessitatibus sed tenetur, aspernatur enim iusto, officia aliquid voluptate similique molestiae
-                exercitationem rerum debitis provident libero voluptatibus dignissimos corporis? Recusandae voluptate
-                cupiditate explicabo soluta totam. Sapiente, voluptatem?</p>
-        </div>
+            <div class="row">
+                <h1 class="text-center mt-5">Why hire me?</h1>
+                <section class="p-5">
+                    <div class="container">
+                        <div class="row text-center g-2">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="h1 mb-3">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <h3 class="card-title mb-3">Team Player</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                                            molestias.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="h1 mb-3">
+                                            <i class="fas fa-tools"></i>
+                                        </div>
+                                        <h3 class="card-title mb-3">Problem Solver</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                                            molestias.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="h1 mb-3">
+                                            <i class="fas fa-user-clock"></i>
+                                        </div>
+                                        <h3 class="card-title mb-3">Minimal Supervision</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                                            molestias.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </section>
+
+    <!-- CONTACT ME -->
+
     <section id="contact">
         <div class="container">
             <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h1>Let's work together</h1>
+                    <p>I'm actively looking for opporunities in web development</p>
+                    <ul class="d-flex justify-content-center">
+                        <span><a href="https://www.linkedin.com/in/john-emmanuel-galang-76206417a/" target="_blank"><i
+                                    class="fab fa-linkedin" class="contact-icon"></i></a></span>
+                        <span><a href="https://twitter.com/immangalang" target="_blank"><i class="fab fa-twitter"
+                                    class="contact-icon"></i></a></span>
+                        <span><a href="https://github.com/immangalang" target="_blank"><i class="fab fa-github"
+                                    class="contact-icon"></i></a></span>
+                    </ul>
+                    <p><i class="far fa-envelope"></i> imman.galang@gmail.com</p>
+                    <p><i class="fab fa-telegram-plane"></i> +63 956 879 8747</p>
+                </div>
                 <div class="col-md-6">
                     <h1>Contact Me</h1>
                     <form class="p-2 bg-transparent text-light text-center rounded">
@@ -161,9 +234,9 @@
                             <textarea name="message" id="message" rows="5" class="d-block w-75 rounded"></textarea>
                         </div>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button type="submit" class="btn" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
-                            Launch demo modal
+                            Send
                         </button>
 
                         <!-- Modal -->
@@ -172,42 +245,27 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <h5 class="modal-title text-dark" id="exampleModalLabel">Message Sent! </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        ...
+                                        <p class="text-dark">Thank you for contacting me.</p>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
                                             data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </form>
-                </div>
-                <div class="col-md-6">
-                    <h1>Let's work together</h1>
-                    <p>I'm actively looking for opporunities in web development</p>
-                    <ul class="d-flex">
-                        <li><a href="https://www.linkedin.com/in/john-emmanuel-galang-76206417a/"><i
-                                    class="fab fa-linkedin" class="contact-icon" target="_blank"></i></a></li>
-                        <li><a href="https://twitter.com/immangalang" target="_blank"><i class="fab fa-twitter"
-                                    class="contact-icon"></i></a></li>
-                        <li><a href="https://github.com/immangalang" target="_blank"><i class="fab fa-github"
-                                    class="contact-icon"></i></a></li>
-                    </ul>
-                    <i class="far fa-envelope"></i><span> imman.galang@gmail.com</span>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-        <p class="p-0 mx-auto">&copy; Created and Designed by Imman Galang 2021</p>
+        <p class="p-2 m-0 mx-auto">&copy; Created and Designed by Imman Galang 2021</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
