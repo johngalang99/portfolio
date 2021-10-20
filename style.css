@@ -34,6 +34,7 @@ body{
 h1{
     font-family: 'Akira Expanded', sans-serif;
     font-size: clamp(2rem, 5vw, 4rem);
+    text-shadow: 2px 2px #ff0000;
 }
 
 /* NAVBAR */
@@ -44,7 +45,20 @@ nav ul{
 }
 
 nav a{
-    font-size: clamp(0.7rem, 4vw, 1.2rem);
+    font-size: clamp(0.7rem, 4vw, 1rem);
+}
+
+nav li a::before{
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: var(--red);
+    transform: scale(0,1);
+    transition: transform ease-in-out 250ms;
+}
+
+nav li a:hover::before{
+    transform: scale(1,1);
 }
 
 .navbar-brand{
@@ -61,11 +75,65 @@ nav a{
     color: white;
     border-radius: 5px;
     background-color: var(--red);
+}
 
+.jumbotron button{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.jumbotron button:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
+}
+
+.download{
+    color: var(--white);
 }
 
 .navbar-toggle-icon{
     color: var(--black);
+}
+
+.nav1{
+    animation: nav-appear 800ms ease-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+.nav2{
+    animation: nav-appear 800ms ease-out 200ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+.nav3{
+    animation: nav-appear 800ms ease-out 400ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+.nav4{
+    animation: nav-appear 800ms ease-out 600ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+.nav5{
+    animation: nav-appear 800ms ease-out 800ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+@keyframes nav-appear {
+    0%{
+        transform: translateY(-100%);
+        transform: rotate(90);
+    }
+    100%{
+        transform: translateY(0%);
+        transform: rotate(0);
+        transform: scale(1);
+    }
 }
 
 /* HEADER */
@@ -74,35 +142,72 @@ header{
     background-color: var(--white);
 }
 
-header .container{
-    padding-top: 10vh;
+header .pb-2{
+    color: var(--red);
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    animation: titleAnimation 1000ms ease-out 800ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 header h1{
     font-size: clamp(3rem, 5vw, 5rem);
-}
-
-header .pb-3{
-    color: var(--red);
-    font-size: clamp(1rem, 4vw, 2rem);
-}
-
-header p{
-    font-size: clamp(1rem, 4vw, 1.5rem);
-}
-
-header button{
-    width: min(150px, 50%);
-    font-size: clamp(1rem, 4vw, 1.2rem);
-    background-color: var(--red);
-    color: white;
-    padding: 15px;
-    border-radius: 10px
+    animation: titleAnimation 1000ms ease-out 1000ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .header-phrase{
     color: var(--darkblue);
-    font-size: clamp(1rem, 4vw, 2rem);
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    animation: titleAnimation 1000ms ease-out 1200ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+header button{
+    width: min(130px, 50%);
+    font-size: clamp(0.8rem, 4vw, 1rem);
+    background-color: var(--red);
+    color: white;
+    padding: 10px;
+    border-radius: 10px
+}
+
+header a{
+    animation: titleAnimation 1000ms ease-out 1600ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+header img{
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+header figure{
+    animation: titleAnimation 1000ms ease-out 1600ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+@keyframes titleAnimation {
+    0% {
+        transform: translateY(30%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* PROJECTS */
@@ -120,6 +225,7 @@ header button{
 #projects h1{
     color: var(--red);
     text-align: center;
+    animation: titleAnimation 200ms;
 }
 
 #projects h2,p{
@@ -141,12 +247,18 @@ header button{
 
 #projects i{
     font-size: 1.7rem;
-    padding: 1rem;
+    padding: 0.2rem 1rem 0.5rem 1rem;
+}
+
+#projects i:hover{
+	color: #f7f7f7;
+	text-shadow: 0 0 15px #f7f7f7;
 }
 
 #projects p{
-    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.2rem);
 }
+
 /* ABOUT ME */
 
 #aboutme{
@@ -165,6 +277,10 @@ header button{
     border-radius: 50%;
     display: block;
     margin: auto;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 #aboutme h1{
@@ -174,7 +290,7 @@ header button{
 
 .row-1 p{
     color: var(--black);
-    font-size: clamp(1rem, 4vw, 1.3rem);
+    font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
 .card{
@@ -219,15 +335,25 @@ header button{
     font-size: 1.7rem;
 }
 
+#contact a i:hover{
+	color: #f7f7f7;
+	text-shadow: 0 0 15px #f7f7f7;
+}
+
 #contact button{
     background-color: var(--red);
     margin-top: 7px;
     color: var(--white);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#contact button:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
 }
 
 footer{
     background-color: var(--black);
     padding: 0;
     color: var(--white);
-
 }
