@@ -1,5 +1,6 @@
-@import url('http://fonts.cdnfonts.com/css/akira-expanded');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,900;1,900&display=swap');
 
 :root{
     --white: #f7f7f7;
@@ -32,9 +33,9 @@ body{
 }
 
 h1{
-    font-family: 'Akira Expanded', sans-serif;
-    font-size: clamp(2rem, 5vw, 4rem);
-    text-shadow: 2px 2px #ff0000;
+    font-family: 'Bebas Neue', cursive;
+    font-size: clamp(3rem, 6vw, 5rem);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 /* NAVBAR */
@@ -66,7 +67,7 @@ nav li a:hover::before{
 
 
 .navbar-brand{
-    font-family: 'Akira Expanded', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     color: var(--red);
 }
 
@@ -98,6 +99,7 @@ nav li a:hover::before{
     color: var(--black);
 }
 
+@media(min-width: 992px){
 .nav1{
     animation: nav-appear 800ms ease-out;
     animation-fill-mode: forwards;
@@ -105,27 +107,28 @@ nav li a:hover::before{
 }
 
 .nav2{
-    animation: nav-appear 800ms ease-out 200ms;
+    animation: nav-appear 800ms ease-out 300ms;
     animation-fill-mode: forwards;
     transform: scale(0);
 }
 
 .nav3{
-    animation: nav-appear 800ms ease-out 400ms;
+    animation: nav-appear 800ms ease-out 500ms;
     animation-fill-mode: forwards;
     transform: scale(0);
 }
 
 .nav4{
-    animation: nav-appear 800ms ease-out 600ms;
+    animation: nav-appear 800ms ease-out 700ms;
     animation-fill-mode: forwards;
     transform: scale(0);
 }
 
 .nav5{
-    animation: nav-appear 800ms ease-out 800ms;
+    animation: nav-appear 800ms ease-out 900ms;
     animation-fill-mode: forwards;
     transform: scale(0);
+}
 }
 
 @keyframes nav-appear {
@@ -155,16 +158,18 @@ header .pb-2{
 }
 
 header h1{
-    font-size: clamp(3rem, 5vw, 5rem);
+    font-size: clamp(3.4rem, 7vw, 6rem);
     animation: titleAnimation 1000ms ease-out 1000ms;
     animation-fill-mode: forwards;
     opacity: 0;
+    color: var(--black);
+    text-shadow: 0 2px 5px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.24);
 }
 
 .header-phrase{
     color: var(--darkblue);
     font-size: clamp(1rem, 4vw, 1.3rem);
-    animation: titleAnimation 1000ms ease-out 1200ms;
+    animation: titleAnimation 1000ms ease-out 1300ms;
     animation-fill-mode: forwards;
     opacity: 0;
 }
@@ -192,7 +197,13 @@ header img{
 }
 
 header figure{
-    animation: titleAnimation 1000ms ease-out 1200ms;
+    animation: titleAnimation 1000ms ease-out 1400ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+header button{
+    animation: titleAnimation 1000ms ease-out 1500ms;
     animation-fill-mode: forwards;
     opacity: 0;
 }
@@ -205,7 +216,7 @@ header figure{
 
 @keyframes titleAnimation {
     0% {
-        transform: translateY(30%);
+        transform: translateY(50px);
         opacity: 0;
     }
     100% {
@@ -241,14 +252,23 @@ header figure{
     color: var(--red);
 }
 
+.projnum{
+    padding-top: 10px;
+}
+
 .projects img{
     border-radius: 20px;
-    background-color:var(--black);
-    opacity: 0.7;
-    transition: all 300ms ease-out
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
-.projects img:hover {
-    opacity: 1;
+
+@media(min-width: 992px){
+    .projects img{
+        opacity: 0.85;
+        transition: all 300ms ease-out
+    }
+    .projects img:hover {
+        opacity: 1;
+    }
 }
 
 #projects i{
@@ -322,11 +342,11 @@ header figure{
     content: '';
     height: 70px;
     display: block;
-    background-color: var(--darkblue);
+    background-color: var(--black);
 }
 
 #contact{
-    background-color: var(--darkblue);
+    background-color: var(--black);
 }
 
 #contact *{
@@ -365,7 +385,7 @@ header figure{
 }
 
 footer{
-    background-color: var(--black);
+    background-color: var(--darkblue);
     padding: 0;
     color: var(--white);
 }
