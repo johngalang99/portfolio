@@ -307,6 +307,7 @@ header button{
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
 
 #aboutme h1{
