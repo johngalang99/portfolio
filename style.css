@@ -180,7 +180,8 @@ header button{
     background-color: var(--red);
     color: white;
     padding: 10px;
-    border-radius: 10px
+    border-radius: 10px;
+    border: none;
 }
 
 header a{
@@ -210,7 +211,7 @@ header button{
 
 @keyframes floating {
     from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 15px); }
+    65%  { transform: translate(0, 10px); }
     to   { transform: translate(0, -0px); }    
 }
 
