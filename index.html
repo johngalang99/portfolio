@@ -57,7 +57,7 @@
                             <p class="pb-2">&#8212; Front-End Developer</p>
                             <h1>Imman Galang</h1>
                             <p class="header-phrase">I build stylish and adaptive websites on the internet</p>
-                            <a href="#contact""><button>Contact Me</button></a>
+                            <a href="#contact""><button class="contact-me">Contact Me</button></a>
                             <a href="./docs/JEA_Galang_CV.pdf" target="_blank" download="JEA_Galang_CV""><button>Resume
                                     <i class="fas fa-file-download download"></i></button></a>
                         </div>
@@ -73,7 +73,8 @@
 
     <section id="projects">
         <div class="container projects">
-            <h1 class="my-5">Projects</h1>
+            <h1 class="py-5">Projects</h1>
+            <!-- project 1 -->
             <div class="row justify-content-center text-center text-md-end align-items-center pb-lg-5">
                 <div class="col-12 col-lg-5 col-md-6">
                     <a href="https://immangalang.github.io/frontend-bootcamp/" target="_blank"><img
@@ -91,6 +92,7 @@
                             class="fas fa-link"></i></a>
                 </div>
             </div>
+            <!-- project 2 -->
             <div class="row justify-content-center text-md-start text-center align-items-center pb-lg-5">
                 <div class="col-12 col-lg-5 col-md-6 order-md-2">
                     <a href="https://immangalang.github.io/sass-practice/dist/" target="_blank"><img src="./images/sass.png"
@@ -107,6 +109,7 @@
                             class="fab fa-github"></i></a>
                 </div>
             </div>
+            <!-- project 3 -->
             <div class="row justify-content-center text-center text-md-end align-items-center pb-lg-5">
                 <div class="col-12 col-lg-5 col-md-6">
                     <a href="https://immangalang.github.io/BlackJack/" target="_blank"><img
@@ -141,11 +144,11 @@
                         CSS, and JavaScript; plus modern frameworks and libraries. While I have spent the last few years developing my writing, researching, and designing 
                         skills as a researcher and freelancer, I believe my background will bring valuable perspective.</p>
                     <h3 class="pt-1"><i class="fas fa-university"></i> Education</h4>
-                        <p>2015-2019 University of the Philippines Los Baños</p>
                         <p>2021 Zuitt Coding Bootcamp</p>
+                        <p>2015-2019 University of the Philippines Los Baños</p>
                         <h3 class="pt-1"><i class="fas fa-briefcase"></i> Work Experience</h4>
-                            <p>2020-2021 University Research Associate</p>
                             <p>2021-present Freelance Graphic Designer and Video Editor</p>
+                            <p>2020-2021 University Research Associate</p>
                         <h3 class="pt-1"><i class="fas fa-cogs"></i> Skills and Tools</h3>
                             <p>Git | HTML | CSS | Bootstrap | Sass | JavaScript</p>
                 </div>
@@ -200,9 +203,9 @@
     <section id="contact">
         <div class="container pb-3">
             <div class="row justify-content-center">
-                <div class="col-md-6">
+                <div>
                     <h1>Let's work together.</h1>
-                    <p>I'm actively looking for opporunities in web development</p>
+                    <p>I'm actively looking for opporunities in web development.</p>
                     <ul class="d-flex justify-content-center">
                         <span><a href="https://www.linkedin.com/in/john-emmanuel-galang-76206417a/" target="_blank"><i
                                     class="fab fa-linkedin" class="contact-icon"></i></a></span>
@@ -212,51 +215,7 @@
                                     class="contact-icon"></i></a></span>
                     </ul>
                     <p><i class="far fa-envelope"></i> imman.galang@gmail.com</p>
-                    <p><i class="fab fa-telegram-plane"></i> +63 956 879 8747</p>
-                </div>
-                <div class="col-md-6">
-                    <h1>Contact Me.</h1>
-                    <form class="p-2 bg-transparent text-light text-center rounded">
-                        <div class="form-group">
-                            <label for="Name">Name</label>
-                            <input type="text" class="form-control w-75" id="Name" aria-describedby="emailHelp"
-                                placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="Email">Email address</label>
-                            <input type="email" class="form-control w-75" id="Email" aria-describedby="emailHelp"
-                                placeholder="name@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="5" class="d-block w-75 rounded"></textarea>
-                        </div>
-                        <!-- Button trigger modal -->
-                        <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Send
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title text-dark" id="exampleModalLabel">Message Sent! </h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p class="text-dark">Thank you for contacting me.</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    <p><i class="fab fa-telegram-plane"></i> +63 956 879 8747</p>                
                 </div>
             </div>
         </div>
@@ -264,7 +223,7 @@
     <footer>
         <p class="p-2 m-0 mx-auto">&copy; Created and Designed by Imman Galang 2021</p>
     </footer>
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

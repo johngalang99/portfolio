@@ -38,6 +38,19 @@ h1{
     text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+section{
+    position: relative;
+}
+
 /* NAVBAR */
 
 nav .container-fluid,
@@ -146,7 +159,8 @@ nav li a:hover::before{
 /* HEADER */
 
 header{
-    background-color: var(--white);
+    background: url(./images/circle-scatter-haikei.svg);
+    background-size: cover;
 }
 
 header .pb-2{
@@ -174,6 +188,19 @@ header h1{
     opacity: 0;
 }
 
+.contact-me{
+    width: min(130px, 50%);
+    font-size: clamp(0.8rem, 4vw, 1rem);
+    background-color: var(--white);
+    color: var(--red);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--red);
+    animation: titleAnimation 1000ms ease-out 1500ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
 header button{
     width: min(130px, 50%);
     font-size: clamp(0.8rem, 4vw, 1rem);
@@ -182,6 +209,9 @@ header button{
     padding: 10px;
     border-radius: 10px;
     border: none;
+    animation: titleAnimation 1000ms ease-out 1500ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 header a{
@@ -199,12 +229,6 @@ header img{
 
 header figure{
     animation: titleAnimation 1000ms ease-out 1400ms;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-header button{
-    animation: titleAnimation 1000ms ease-out 1500ms;
     animation-fill-mode: forwards;
     opacity: 0;
 }
@@ -228,7 +252,12 @@ header button{
 
 /* PROJECTS */
 
-#projects::before,
+#projects::before{
+content: '';
+height: 40px;
+display: block;
+}
+
 #projects::after{
     content: '';
     height: 40px;
@@ -236,7 +265,9 @@ header button{
 }
 
 #projects{
-    background-color: var(--black);
+    background-image: url(images/polygon-scatter-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #projects h1{
@@ -289,14 +320,16 @@ header button{
 /* ABOUT ME */
 
 #aboutme{
-    background-color: var(--white);
+    background-image: url(images/blob-scene-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #aboutme::before{
     content: '';
     height: 70px;
     display: block;
-    background-color: var(--white);
+    background-color: transparent;  
 }
 
 #aboutme img{
@@ -390,4 +423,9 @@ footer{
     background-color: var(--darkblue);
     padding: 0;
     color: var(--white);
+}
+
+#email-me{
+    border:none;
+    font-size: 1.7rem !important;
 }
