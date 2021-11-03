@@ -322,6 +322,7 @@ display: block;
 #aboutme{
     background-image: url(images/blob-scene-haikei.svg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
