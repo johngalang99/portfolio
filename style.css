@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,900;1,900&display=swap');
 
-:root{
+:root {
     --white: #f7f7f7;
-    --red: #F05454;
-    --darkblue: #30475E;
+    --red: #f05454;
+    --darkblue: #30475e;
     --black: #222831;
 }
 
@@ -17,7 +17,7 @@
     padding: 0;
 }
 
-i{
+i {
     color: var(--red);
 }
 
@@ -28,128 +28,127 @@ body::before {
     background-color: var(--white);
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1{
+h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: clamp(3rem, 6vw, 5rem);
-    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .fade-in {
     opacity: 0;
-    transition: opacity 250ms ease-in;
+    transition: opacity 500ms ease-in;
 }
 
 .fade-in.appear {
     opacity: 1;
 }
 
-section{
+section {
     position: relative;
 }
 
 /* NAVBAR */
 
 nav .container-fluid,
-nav ul{
+nav ul {
     background-color: var(--white);
     animation: nav-appear 600ms ease-out;
     animation-fill-mode: forwards;
     transform: scale(0);
 }
 
-nav li a{
+nav li a {
     font-size: clamp(0.7rem, 4vw, 1rem);
 }
 
-nav li a::before{
+nav li a::before {
     content: '';
     display: block;
     height: 3px;
     background-color: var(--red);
-    transform: scale(0,1);
+    transform: scale(0, 1);
     transition: transform ease-in-out 250ms;
 }
 
-nav li a:hover::before{
-    transform: scale(1,1);
+nav li a:hover::before {
+    transform: scale(1, 1);
 }
 
-
-.navbar-brand{
+.navbar-brand {
     font-family: 'Bebas Neue', cursive;
     color: var(--red);
 }
 
-.nav-link{
+.nav-link {
     color: var(--black);
 }
 
-.resume{
+.resume {
     text-decoration: none;
     color: white;
     border-radius: 5px;
     background-color: var(--red);
 }
 
-.jumbotron button{
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+.jumbotron button {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .jumbotron button:hover {
-    box-shadow: 0 5px 10px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
 }
 
-.download{
+.download {
     color: var(--white);
 }
 
-.navbar-toggle-icon{
+.navbar-toggle-icon {
     color: var(--black);
 }
 
-@media(min-width: 992px){
-.nav1{
-    animation: nav-appear 800ms ease-out;
-    animation-fill-mode: forwards;
-    transform: scale(0);
-}
+@media (min-width: 992px) {
+    .nav1 {
+        animation: nav-appear 800ms ease-out;
+        animation-fill-mode: forwards;
+        transform: scale(0);
+    }
 
-.nav2{
-    animation: nav-appear 800ms ease-out 300ms;
-    animation-fill-mode: forwards;
-    transform: scale(0);
-}
+    .nav2 {
+        animation: nav-appear 800ms ease-out 300ms;
+        animation-fill-mode: forwards;
+        transform: scale(0);
+    }
 
-.nav3{
-    animation: nav-appear 800ms ease-out 500ms;
-    animation-fill-mode: forwards;
-    transform: scale(0);
-}
+    .nav3 {
+        animation: nav-appear 800ms ease-out 500ms;
+        animation-fill-mode: forwards;
+        transform: scale(0);
+    }
 
-.nav4{
-    animation: nav-appear 800ms ease-out 700ms;
-    animation-fill-mode: forwards;
-    transform: scale(0);
-}
+    .nav4 {
+        animation: nav-appear 800ms ease-out 700ms;
+        animation-fill-mode: forwards;
+        transform: scale(0);
+    }
 
-.nav5{
-    animation: nav-appear 800ms ease-out 900ms;
-    animation-fill-mode: forwards;
-    transform: scale(0);
-}
+    .nav5 {
+        animation: nav-appear 800ms ease-out 900ms;
+        animation-fill-mode: forwards;
+        transform: scale(0);
+    }
 }
 
 @keyframes nav-appear {
-    0%{
+    0% {
         transform: translateY(-100%);
         transform: rotate(90);
     }
-    100%{
+    100% {
         transform: translateY(0%);
         transform: rotate(0);
         transform: scale(1);
@@ -158,12 +157,12 @@ nav li a:hover::before{
 
 /* HEADER */
 
-header{
+header {
     background: url(./images/circle-scatter-haikei.svg);
     background-size: cover;
 }
 
-header .pb-2{
+header .pb-2 {
     color: var(--red);
     font-size: clamp(1rem, 4vw, 1.5rem);
     animation: titleAnimation 1000ms ease-out 800ms;
@@ -171,16 +170,16 @@ header .pb-2{
     opacity: 0;
 }
 
-header h1{
+header h1 {
     font-size: clamp(3.4rem, 7vw, 6rem);
     animation: titleAnimation 1000ms ease-out 1000ms;
     animation-fill-mode: forwards;
     opacity: 0;
     color: var(--black);
-    text-shadow: 0 2px 5px rgba(0,0,0,0.12), 0 2px 5px rgba(0,0,0,0.24);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
 }
 
-.header-phrase{
+.header-phrase {
     color: var(--darkblue);
     font-size: clamp(1rem, 4vw, 1.3rem);
     animation: titleAnimation 1000ms ease-out 1300ms;
@@ -188,7 +187,7 @@ header h1{
     opacity: 0;
 }
 
-.contact-me{
+.contact-me {
     width: min(130px, 50%);
     font-size: clamp(0.8rem, 4vw, 1rem);
     background-color: var(--white);
@@ -201,7 +200,7 @@ header h1{
     opacity: 0;
 }
 
-header button{
+header button {
     width: min(130px, 50%);
     font-size: clamp(0.8rem, 4vw, 1rem);
     background-color: var(--red);
@@ -214,29 +213,35 @@ header button{
     opacity: 0;
 }
 
-header a{
+header a {
     animation: titleAnimation 1000ms ease-out 1600ms;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
-header img{
+header img {
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
-header figure{
+header figure {
     animation: titleAnimation 1000ms ease-out 1400ms;
     animation-fill-mode: forwards;
     opacity: 0;
 }
 
 @keyframes floating {
-    from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 10px); }
-    to   { transform: translate(0, -0px); }    
+    from {
+        transform: translate(0, 0px);
+    }
+    65% {
+        transform: translate(0, 10px);
+    }
+    to {
+        transform: translate(0, -0px);
+    }
 }
 
 @keyframes titleAnimation {
@@ -252,88 +257,91 @@ header figure{
 
 /* PROJECTS */
 
-#projects::before{
-content: '';
-height: 40px;
-display: block;
-}
-
-#projects::after{
+#projects::before {
     content: '';
     height: 40px;
     display: block;
 }
 
-#projects{
+#projects::after {
+    content: '';
+    height: 40px;
+    display: block;
+}
+
+#projects {
     background-image: url(images/polygon-scatter-haikei.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#projects h1{
+#projects h1 {
     color: var(--red);
     text-align: center;
     animation: titleAnimation 200ms;
 }
 
-#projects h2,p{
+#projects h2,
+p {
     color: var(--white);
 }
 
-.projnum, .tools{
+.projnum,
+.tools {
     color: var(--red);
 }
 
-.projnum{
+.projnum {
     padding-top: 10px;
 }
 
-.projects img{
+.projects img {
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+        0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
-@media(min-width: 992px){
-    .projects img{
+@media (min-width: 992px) {
+    .projects img {
         opacity: 0.85;
-        transition: all 300ms ease-out
+        transition: all 300ms ease-out;
     }
     .projects img:hover {
         opacity: 1;
     }
 }
 
-#projects i{
+#projects i {
     font-size: 1.7rem;
     padding: 0.1rem 1rem 1rem 1rem;
 }
 
-#projects i:hover{
-	color: #f7f7f7;
-	text-shadow: 0 0 15px #f7f7f7;
+#projects i:hover {
+    color: #f7f7f7;
+    text-shadow: 0 0 15px #f7f7f7;
 }
 
-#projects p{
+#projects p {
     font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 /* ABOUT ME */
 
-#aboutme{
+#aboutme {
     background-image: url(images/blob-scene-haikei.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-#aboutme::before{
+#aboutme::before {
     content: '';
     height: 70px;
     display: block;
-    background-color: transparent;  
+    background-color: transparent;
 }
 
-#aboutme img{
+#aboutme img {
     max-width: min(400px, 60%);
     border-radius: 50%;
     display: block;
@@ -342,91 +350,91 @@ display: block;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-#aboutme h1{
+#aboutme h1 {
     text-align: center;
     color: var(--red);
 }
 
-#aboutme h3{
+#aboutme h3 {
     font-weight: 1000;
     font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
-.row-1 p{
+.row-1 p {
     color: var(--black);
     font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
-.card{
+.card {
     background-color: var(--darkblue);
 }
 
-.card-title{
+.card-title {
     color: var(--red);
 }
 
-.card-text{
+.card-text {
     color: var(--white);
 }
 
 /* CONTACT */
 
-#contact::before{
+#contact::before {
     content: '';
     height: 70px;
     display: block;
     background-color: var(--black);
 }
 
-#contact{
+#contact {
     background-color: var(--black);
 }
 
-#contact *{
+#contact * {
     text-align: center;
 }
 
-#contact form *{
+#contact form * {
     margin: auto;
 }
 
-#contact h1{
+#contact h1 {
     color: var(--red);
 }
 
 #contact a,
-#contact a i{
+#contact a i {
     padding: 7px;
     font-size: 1.7rem;
 }
 
-#contact a i:hover{
-	color: #f7f7f7;
-	text-shadow: 0 0 15px #f7f7f7;
+#contact a i:hover {
+    color: #f7f7f7;
+    text-shadow: 0 0 15px #f7f7f7;
 }
 
-#contact button{
+#contact button {
     background-color: var(--red);
     margin-top: 7px;
     color: var(--white);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 #contact button:hover {
-    box-shadow: 0 5px 10px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
 }
 
-footer{
+footer {
     background-color: var(--darkblue);
     padding: 0;
     color: var(--white);
 }
 
-#email-me{
-    border:none;
+#email-me {
+    border: none;
     font-size: 1.7rem !important;
 }
