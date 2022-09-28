@@ -3,438 +3,437 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,900;1,900&display=swap');
 
 :root {
-    --white: #f7f7f7;
-    --red: #f05454;
-    --darkblue: #30475e;
-    --black: #222831;
+  --white: #f7f7f7;
+  --red: #f05454;
+  --darkblue: #30475e;
+  --black: #222831;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 i {
-    color: var(--red);
+  color: var(--red);
 }
 
 body::before {
-    content: '';
-    height: 50px;
-    display: block;
-    background-color: var(--white);
+  content: '';
+  height: 50px;
+  display: block;
+  background-color: var(--white);
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: clamp(3rem, 6vw, 5rem);
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(3rem, 6vw, 5rem);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .fade-in {
-    opacity: 0;
-    transition: opacity 500ms ease-in;
+  opacity: 0;
+  transition: opacity 500ms ease-in;
 }
 
 .fade-in.appear {
-    opacity: 1;
+  opacity: 1;
 }
 
 section {
-    position: relative;
+  position: relative;
 }
 
 /* NAVBAR */
 
 nav .container-fluid,
 nav ul {
-    background-color: var(--white);
-    animation: nav-appear 600ms ease-out;
-    animation-fill-mode: forwards;
-    transform: scale(0);
+  background-color: var(--white);
+  animation: nav-appear 600ms ease-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 
 nav li a {
-    font-size: clamp(0.7rem, 4vw, 1rem);
+  font-size: clamp(0.7rem, 4vw, 1rem);
 }
 
 nav li a::before {
-    content: '';
-    display: block;
-    height: 3px;
-    background-color: var(--red);
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
+  content: '';
+  display: block;
+  height: 3px;
+  background-color: var(--red);
+  transform: scale(0, 1);
+  transition: transform ease-in-out 250ms;
 }
 
 nav li a:hover::before {
-    transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 .navbar-brand {
-    font-family: 'Bebas Neue', cursive;
-    color: var(--red);
+  font-family: 'Bebas Neue', cursive;
+  color: var(--red);
 }
 
 .nav-link {
-    color: var(--black);
+  color: var(--black);
 }
 
 .resume {
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-    background-color: var(--red);
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  background-color: var(--red);
 }
 
 .jumbotron button {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .jumbotron button:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
 }
 
 .download {
-    color: var(--white);
+  color: var(--white);
 }
 
 .navbar-toggle-icon {
-    color: var(--black);
+  color: var(--black);
 }
 
 @media (min-width: 992px) {
-    .nav1 {
-        animation: nav-appear 800ms ease-out;
-        animation-fill-mode: forwards;
-        transform: scale(0);
-    }
+  .nav1 {
+    animation: nav-appear 800ms ease-out;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+  }
 
-    .nav2 {
-        animation: nav-appear 800ms ease-out 300ms;
-        animation-fill-mode: forwards;
-        transform: scale(0);
-    }
+  .nav2 {
+    animation: nav-appear 800ms ease-out 300ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+  }
 
-    .nav3 {
-        animation: nav-appear 800ms ease-out 500ms;
-        animation-fill-mode: forwards;
-        transform: scale(0);
-    }
+  .nav3 {
+    animation: nav-appear 800ms ease-out 500ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+  }
 
-    .nav4 {
-        animation: nav-appear 800ms ease-out 700ms;
-        animation-fill-mode: forwards;
-        transform: scale(0);
-    }
+  .nav4 {
+    animation: nav-appear 800ms ease-out 700ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+  }
 
-    .nav5 {
-        animation: nav-appear 800ms ease-out 900ms;
-        animation-fill-mode: forwards;
-        transform: scale(0);
-    }
+  .nav5 {
+    animation: nav-appear 800ms ease-out 900ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+  }
 }
 
 @keyframes nav-appear {
-    0% {
-        transform: translateY(-100%);
-        transform: rotate(90);
-    }
-    100% {
-        transform: translateY(0%);
-        transform: rotate(0);
-        transform: scale(1);
-    }
+  0% {
+    transform: translateY(-100%);
+    transform: rotate(90);
+  }
+  100% {
+    transform: translateY(0%);
+    transform: rotate(0);
+    transform: scale(1);
+  }
 }
 
 /* HEADER */
 
 header {
-    background: url(./images/circle-scatter-haikei.svg);
-    background-size: cover;
+  background: url(./images/circle-scatter-haikei.svg);
+  background-size: cover;
 }
 
 header .pb-2 {
-    color: var(--red);
-    font-size: clamp(1rem, 4vw, 1.5rem);
-    animation: titleAnimation 1000ms ease-out 800ms;
-    animation-fill-mode: forwards;
-    opacity: 0;
+  color: var(--red);
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  animation: titleAnimation 1000ms ease-out 800ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 header h1 {
-    font-size: clamp(3.4rem, 7vw, 6rem);
-    animation: titleAnimation 1000ms ease-out 1000ms;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    color: var(--black);
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
+  font-size: clamp(3.4rem, 7vw, 6rem);
+  animation: titleAnimation 1000ms ease-out 1000ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  color: var(--black);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.24);
 }
 
 .header-phrase {
-    color: var(--darkblue);
-    font-size: clamp(1rem, 4vw, 1.3rem);
-    animation: titleAnimation 1000ms ease-out 1300ms;
-    animation-fill-mode: forwards;
-    opacity: 0;
+  color: var(--darkblue);
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  animation: titleAnimation 1000ms ease-out 1300ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .contact-me {
-    width: min(130px, 50%);
-    font-size: clamp(0.8rem, 4vw, 1rem);
-    background-color: var(--white);
-    color: var(--red);
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid var(--red);
-    animation: titleAnimation 1000ms ease-out 1500ms;
-    animation-fill-mode: forwards;
-    opacity: 0;
+  width: min(130px, 50%);
+  font-size: clamp(0.8rem, 4vw, 1rem);
+  background-color: var(--white);
+  color: var(--red);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--red);
+  animation: titleAnimation 1000ms ease-out 1500ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 header button {
-    width: min(130px, 50%);
-    font-size: clamp(0.8rem, 4vw, 1rem);
-    background-color: var(--red);
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    animation: titleAnimation 1000ms ease-out 1500ms;
-    animation-fill-mode: forwards;
-    opacity: 0;
+  width: min(130px, 50%);
+  font-size: clamp(0.8rem, 4vw, 1rem);
+  background-color: var(--red);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  animation: titleAnimation 1000ms ease-out 1500ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 header a {
-    animation: titleAnimation 1000ms ease-out 1600ms;
-    animation-fill-mode: forwards;
-    opacity: 0;
+  animation: titleAnimation 1000ms ease-out 1600ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 header img {
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 header figure {
-    animation: titleAnimation 1000ms ease-out 1400ms;
-    animation-fill-mode: forwards;
-    opacity: 0;
+  animation: titleAnimation 1000ms ease-out 1400ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 @keyframes floating {
-    from {
-        transform: translate(0, 0px);
-    }
-    65% {
-        transform: translate(0, 10px);
-    }
-    to {
-        transform: translate(0, -0px);
-    }
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 10px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
 }
 
 @keyframes titleAnimation {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* PROJECTS */
 
 #projects::before {
-    content: '';
-    height: 40px;
-    display: block;
+  content: '';
+  height: 40px;
+  display: block;
 }
 
 #projects::after {
-    content: '';
-    height: 40px;
-    display: block;
+  content: '';
+  height: 40px;
+  display: block;
 }
 
 #projects {
-    background-image: url(images/polygon-scatter-haikei.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(images/polygon-scatter-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #projects h1 {
-    color: var(--red);
-    text-align: center;
-    animation: titleAnimation 200ms;
+  color: var(--red);
+  text-align: center;
+  animation: titleAnimation 200ms;
 }
 
 #projects h2,
 p {
-    color: var(--white);
+  color: var(--white);
 }
 
 .projnum,
 .tools {
-    color: var(--red);
+  color: var(--red);
 }
 
 .projnum {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .projects img {
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
-        0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
 @media (min-width: 992px) {
-    .projects img {
-        opacity: 0.85;
-        transition: all 300ms ease-out;
-    }
-    .projects img:hover {
-        opacity: 1;
-    }
+  .projects img {
+    opacity: 0.85;
+    transition: all 300ms ease-out;
+  }
+  .projects img:hover {
+    opacity: 1;
+  }
 }
 
 #projects i {
-    font-size: 1.7rem;
-    padding: 0.1rem 1rem 1rem 1rem;
+  font-size: 1.7rem;
+  padding: 0.1rem 1rem 1rem 1rem;
 }
 
 #projects i:hover {
-    color: #f7f7f7;
-    text-shadow: 0 0 15px #f7f7f7;
+  color: #f7f7f7;
+  text-shadow: 0 0 15px #f7f7f7;
 }
 
 #projects p {
-    font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 /* ABOUT ME */
 
 #aboutme {
-    background-image: url(images/blob-scene-haikei.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: url(images/blob-scene-haikei.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #aboutme::before {
-    content: '';
-    height: 70px;
-    display: block;
-    background-color: transparent;
+  content: '';
+  height: 70px;
+  display: block;
+  background-color: transparent;
 }
 
 #aboutme img {
-    max-width: min(400px, 60%);
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  max-width: min(400px, 60%);
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 #aboutme h1 {
-    text-align: center;
-    color: var(--red);
+  text-align: center;
+  color: var(--red);
 }
 
 #aboutme h3 {
-    font-weight: 1000;
-    font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 1000;
+  font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 .row-1 p {
-    color: var(--black);
-    font-size: clamp(0.8rem, 2vw, 1rem);
+  color: var(--black);
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 .card {
-    background-color: var(--darkblue);
+  background-color: var(--darkblue);
 }
 
 .card-title {
-    color: var(--red);
+  color: var(--red);
 }
 
 .card-text {
-    color: var(--white);
+  color: var(--white);
 }
 
 /* CONTACT */
 
 #contact::before {
-    content: '';
-    height: 70px;
-    display: block;
-    background-color: var(--black);
+  content: '';
+  height: 70px;
+  display: block;
+  background-color: var(--black);
 }
 
 #contact {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 #contact * {
-    text-align: center;
+  text-align: center;
 }
 
 #contact form * {
-    margin: auto;
+  margin: auto;
 }
 
 #contact h1 {
-    color: var(--red);
+  color: var(--red);
 }
 
 #contact a,
 #contact a i {
-    padding: 7px;
-    font-size: 1.7rem;
+  padding: 7px;
+  font-size: 1.7rem;
 }
 
 #contact a i:hover {
-    color: #f7f7f7;
-    text-shadow: 0 0 15px #f7f7f7;
+  color: #f7f7f7;
+  text-shadow: 0 0 15px #f7f7f7;
 }
 
 #contact button {
-    background-color: var(--red);
-    margin-top: 7px;
-    color: var(--white);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-color: var(--red);
+  margin-top: 7px;
+  color: var(--white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 #contact button:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
 }
 
 footer {
-    background-color: var(--darkblue);
-    padding: 0;
-    color: var(--white);
+  background-color: var(--darkblue);
+  padding: 0;
+  color: var(--white);
 }
 
 #email-me {
-    border: none;
-    font-size: 1.7rem !important;
+  border: none;
+  font-size: 1.7rem !important;
 }
