@@ -415,6 +415,10 @@ p {
   text-shadow: 0 0 15px #f7f7f7;
 }
 
+#contact a {
+  font-size: 1rem !important;
+}
+
 #contact button {
   background-color: var(--red);
   margin-top: 7px;
